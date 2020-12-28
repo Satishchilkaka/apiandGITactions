@@ -31,12 +31,3 @@ jobs:
       # Build project
       - name: build project and start the server
         build: yarn start
-
-        # cypress tst
-      - name: Cypress tests
-        uses: ./
-        with:
-          working-directory: ./
-          browser: chrome
-          headless: 
-            
