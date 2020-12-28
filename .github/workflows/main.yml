@@ -8,9 +8,7 @@ jobs:
       - uses: actions/setup-node@v1
       - run: yarn
       - run: yarn start
-jobs:
-  Rus cypress:
+  Run cypress:
     runs-on: ubuntu-latest
     steps:
-  
       - run: yarn test1
