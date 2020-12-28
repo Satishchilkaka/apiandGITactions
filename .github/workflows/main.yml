@@ -12,5 +12,5 @@ jobs:
   Rus cypress:
     runs-on: ubuntu-latest
     steps:
-      - name: start the cypress
+  
       - run: yarn test1
