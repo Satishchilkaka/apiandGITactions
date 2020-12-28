@@ -11,6 +11,7 @@
   },
   "scripts": {
     "start": "parcel app/index.html",
-    "test": "yarn cypress run --spec cypress/integration/nav.spec.js --env userName=$userName, pin=$pin"
+    "test": "yarn cypress run --spec cypress/integration/nav.spec.js --env userName=$userName, pin=$pin",
+    "test1": "yarn cypress run --spec cypress/integration/nav.spec.js"
   }
 }
