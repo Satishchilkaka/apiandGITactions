@@ -30,4 +30,4 @@ jobs:
 
       # Build project
       - name: build project and start the server
-        build: yarn start
+        run: yarn start
