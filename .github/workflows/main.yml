@@ -10,5 +10,6 @@ jobs:
       - run: yarn start
   two:
     runs-on: ubuntu-latest
+    needs: [one]
     steps:
       - run: yarn test1
