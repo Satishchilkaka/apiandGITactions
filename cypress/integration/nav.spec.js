@@ -1,4 +1,5 @@
 
+import { describe } from 'mocha';
 import login from './login.js'
 const userName = Cypress.env("userName");
 const pin = Cypress.env("pin")
@@ -7,15 +8,12 @@ const amount = Cypress.env("amount")
 
 
 
-describe('Navigate to basic bank',() => {
+describe.skip('Navigate to basic bank',() => {
 
-it('navigate to AS1', () => {
-    cy.visit('')
-})
-    it.skip('Should open basic bank', () => {
+    it('Should open basic bank', () => {
         login.loginUser(userName, pin)
     })
-    it.skip('send money to other user', () => {
+    it('send money to other user', () => {
         login.loginUser(userName, pin)
         cy.get('.form--transfer').within(() => {
             cy.get('input:first').type(rUser);
@@ -25,3 +23,18 @@ it('navigate to AS1', () => {
 
     })
 })
+
+describe('Navigate to AS1', () => {
+    it('navigate to AS1', () => {
+        loginas(user, password)
+    })
+})
+function loginas(user, password) {
+    cy.visit('as1-ui/login')
+    cy.get('.login-form').within(() => {
+        cy.get('input:first').type(user, { delay: 0, force: true });
+        cy.get('input:last').type(password, { delay: 0, force: true, log: false });
+    })
+    cy.get('.btn-login').click().should('not.exist')
+    cy.wait(2000)
+}
