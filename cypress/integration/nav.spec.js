@@ -1,6 +1,6 @@
 
 import login from './login.js'
-const userName = Cypress.env("userName");
+const user = Cypress.env("user");
 const pin = Cypress.env("pin")
 const rUser = Cypress.env("rUser");
 const amount = Cypress.env("amount")
