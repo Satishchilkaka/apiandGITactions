@@ -1,0 +1,16 @@
+{
+  "name": "api-and-git-actions",
+  "version": "1.0.0",
+  "description": "api and git actions",
+  "main": "index.js",
+  "author": "Satish <satishchilkaka8@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cypress": "^6.2.0",
+    "parcel-bundler": "^1.12.4"
+  },
+  "scripts": {
+    "start": "parcel app/index.html",
+    "test": "yarn cypress run --spec cypress/integration/nav.spec.js --env userName=$userName, pin=$pin"
+  }
+}
