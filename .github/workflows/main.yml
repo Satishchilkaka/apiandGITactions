@@ -47,5 +47,5 @@ jobs:
 
       - name: run cypress test
         run: yarn add wait-on
-        wait-on: 'http://localhost:1234'
+        wait-on: 'npx wait-on --timeout 5000 http://localhost:1234'
         run: yarn test1
