@@ -1,12 +1,16 @@
 name: learn-github-actions-CI-CD
 on: [push]
 jobs:
-  check-bats-version:
+  Build basic bank simple static webpage:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
       - run: yarn
       - run: yarn start
-      - run: yarn -v1
+jobs:
+  Rus cypress:
+    runs-on: ubuntu-latest
+    steps:
+      - name: start the cypress
       - run: yarn test1
