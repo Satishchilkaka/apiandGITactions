@@ -7,5 +7,6 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
       - run: yarn
+      - run: yarn start
       - run: yarn -v1
       - run: yarn test1
