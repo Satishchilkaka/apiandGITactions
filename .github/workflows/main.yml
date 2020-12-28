@@ -8,4 +8,4 @@ jobs:
       - uses: actions/setup-node@v1
       - run: yarn
       - run: yarn -v1
-      - run: test1
+      - run: yarn test1
