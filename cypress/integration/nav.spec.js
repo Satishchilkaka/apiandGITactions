@@ -4,6 +4,7 @@ const user = Cypress.env("user");
 const pin = Cypress.env("pin")
 const rUser = Cypress.env("rUser");
 const amount = Cypress.env("amount")
+const password = Cypress.env("password");
 
 
 
