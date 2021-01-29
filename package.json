@@ -6,12 +6,13 @@
   "author": "Satish <satishchilkaka8@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@angular/cli": "^11.1.2",
     "cypress": "^6.2.0",
     "parcel-bundler": "^1.12.4"
   },
   "scripts": {
-    "build": "parcel app/index.html",
-    "test": "yarn cypress run --spec cypress/integration/nav.spec.js --env userName=$userName, pin=$pin",
+    "build": "ng serve",
+    "test": "yarn cypress run --spec cypress/integration/test.spec.js",
     "test1": "yarn cypress run --spec cypress/integration/nav.spec.js --env user:${{secrets.USER}},password:${{secrets.PASSWORD}}"
   }
 }
